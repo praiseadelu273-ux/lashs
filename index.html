@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovemylashes.ng - Beauty studio</title>
+    <link rel="stylesheet" href="standalone-full.css">
+    <link rel="stylesheet" href="booking-calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2348149144458?text=Hello!%20I'd%20like%20to%20book%20a%20lash%20appointment" class="whatsapp-button" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Lovemylashes.pdf ng image .png" alt="Love My Lashes" class="logo-image">
+                <span>Lovemylashes</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#booking" class="cta-button">Book Now</a>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+        
+        <div class="hero-content">
+            <span class="hero-badge">
+                <i class="fas fa-sparkles"></i>
+                Beauty studio
+            </span>
+            <h1 class="hero-title">
+                Lashes<br>
+                <span class="gradient-text">That loves you back</span>
+            </h1>
+            <p class="hero-description">
+                Experience the luxury of professionally applied lash extensions.<br>
+                Natural, glamorous, or dramatic - we bring your vision to life.
+            </p>
+            <div class="hero-buttons">
+                <a href="#booking" class="primary-btn">
+                    <span>Book An Appointment</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+                <a href="#services" class="secondary-btn">
+                    <span>View Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+   
+    <!-- Custom Lash Statement -->
+
+    <div class="custom-lash-statement" style="background: linear-gradient(90deg, #fff0f6 0%, #fce4ec 100%); margin: 32px auto 24px auto; padding: 24px 32px; border-radius: 18px; max-width: 700px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); text-align: center;">
+        <p style="font-size: 1.25rem; font-family: 'Playfair Display', serif; color: #b71c50; margin: 0; font-weight: 600; letter-spacing: 0.01em;">
+            All lash sets at <span style="color:#d81b60; font-weight:700;">lovemylashes.ng</span> are tailored to each client's unique eye shape and preferences,<br>ensuring a <span style="color:#ad1457; font-style:italic;">perfect fit</span> every time.
+        </p>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-badge">
+                <i class="fas fa-spa"></i>
+                Our Services
+            </span>
+            <h2 class="section-title">
+                Premium <span class="gradient-text">Lash Services</span>
+            </h2>
+            <p class="section-description">
+                Choose from our range of professional lash extension services, tailored to enhance your natural beauty.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-booking-service="classic" data-booking-price="15000" data-booking-duration="90">
+                <div class="service-icon"><i class="fas fa-magic"></i></div>
+                <h3>Classic</h3>
+                <p class="service-desc">One extension per natural lash for a natural, elegant look</p>
+                <div class="service-price">₦18,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Natural appearance</li>
+                    <li><i class="fas fa-check"></i> 4-6 weeks retention</li>
+                    <li><i class="fas fa-check"></i> Perfect for beginners</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="hybrid" data-booking-price="20000" data-booking-duration="120">
+                <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Hybrid</h3>
+                <p class="service-desc">A soft blend of classic and volume for a fuller, balanced look.</p>
+                <div class="service-price">₦20,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Best of both worlds</li>
+                    <li><i class="fas fa-check"></i> Textured look</li>
+                    <li><i class="fas fa-check"></i> Versatile style</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card featured" data-booking-service="volume" data-booking-price="30000" data-booking-duration="150">
+                <div class="popular-badge">Most Popular</div>
+                <div class="service-icon"><i class="fas fa-gem"></i></div>
+                <h3>Volume</h3>
+                <p class="service-desc"> lightweight fans create a fluffy, full lash experience</p>
+                <div class="service-price">₦25,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Dramatic volume</li>
+                    <li><i class="fas fa-check"></i> 4-6 weeks retention</li>
+                    <li><i class="fas fa-check"></i> Customizable fullness</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="mega-volume" data-booking-price="35000" data-booking-duration="180">
+                <div class="service-icon"><i class="fas fa-crown"></i></div>
+                <h3>Mega Volume</h3>
+                <p class="service-desc">Extra-dense and dramatic, giving you maximum fullness and intensity for a bold statement</p>
+                <div class="service-price">₦30,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Ultra glamorous</li>
+                    <li><i class="fas fa-check"></i> 4-6 weeks retention</li>
+                    <li><i class="fas fa-check"></i> Special occasions</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="angel" data-booking-price="20000" data-booking-duration="120">
+                <div class="service-icon"><i class="fas fa-star"></i></div>
+                <h3>Angel Set</h3>
+                <p class="service-desc">Closed fans create a sleek, gossy wet-lash effect.</p>
+                <div class="service-price">₦20,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Soft and wispy</li>
+                    <li><i class="fas fa-check"></i> Dreamy appearance</li>
+                    <li><i class="fas fa-check"></i> Romantic style</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="doll" data-booking-price="30000" data-booking-duration="150">
+                <div class="service-icon"><i class="fas fa-heart"></i></div>
+                <h3>Doll Set</h3>
+                <p class="service-desc">Includes bottom lashes. Meduim fullness with wispy spikes for a textured, eye-opening look.</p>
+                <div class="service-price">₦30,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Includes bottoms</li>
+                    <li><i class="fas fa-check"></i> Doll-like appearance</li>
+                    <li><i class="fas fa-check"></i> Complete eye transformation</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="anime" data-booking-price="30000" data-booking-duration="150">
+                <div class="service-icon"><i class="fas fa-cat"></i></div>
+                <h3>Anime Set</h3>
+                <p class="service-desc">Bold spikes and defined sections for a dramatic, animated lash style.</p>
+                <div class="service-price">₦30,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Anime-inspired</li>
+                    <li><i class="fas fa-check"></i> Dramatic effect</li>
+                    <li><i class="fas fa-check"></i> Unique style</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="wispy-addon" data-booking-price="6000" data-booking-duration="20">
+                <div class="service-icon"><i class="fas fa-feather"></i></div>
+                <h3>Wispy Add-on</h3>
+                <p class="service-desc">Spikes added to any set for a soft, fluttery, textured finish.</p>
+                <div class="service-price">₦6,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Light and feathery</li>
+                    <li><i class="fas fa-check"></i> Natural effect</li>
+                    <li><i class="fas fa-check"></i> Subtle enhancement</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="bottom-lashes" data-booking-price="12000" data-booking-duration="45">
+                <div class="service-icon"><i class="fas fa-arrow-down"></i></div>
+                <h3>Bottom Lashes</h3>
+                <p class="service-desc">Bottom lash extensions, pricing varies by style and fullness</p>
+                <div class="service-price">₦8,000 - ₦15,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Customizable style</li>
+                    <li><i class="fas fa-check"></i> Variable fullness</li>
+                    <li><i class="fas fa-check"></i> Completes the look</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="lash-removal" data-booking-price="5000" data-booking-duration="30">
+                <div class="service-icon"><i class="fas fa-eraser"></i></div>
+                <h3>Lash Removal</h3>
+                <p class="service-desc">Safe and gentle removal of lash extensions</p>
+                <div class="service-price">₦5,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Safe removal</li>
+                    <li><i class="fas fa-check"></i> Quick service</li>
+                    <li><i class="fas fa-check"></i> Protects natural lashes</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <div class="service-card" data-booking-service="brow-lamination" data-booking-price="10000" data-booking-duration="60">
+                <div class="service-icon"><i class="fas fa-grip-lines"></i></div>
+                <h3>Brow Lamination</h3>
+                <p class="service-desc">Smooths and lifts brows for a fuller, defined look.</p>
+                <div class="service-price">₦10,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Fuller, lifted brows</li>
+                    <li><i class="fas fa-check"></i> Lasts up to 6 weeks</li>
+                    <li><i class="fas fa-check"></i> Includes brow styling</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+            <div class="service-card" data-booking-service="brow-tint" data-booking-price="10000" data-booking-duration="30">
+                <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>Brow Tint</h3>
+                <p class="service-desc">Enhances brow color and definition for a bolder look.</p>
+                <div class="service-price">₦10,000</div>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Natural-looking tint</li>
+                    <li><i class="fas fa-check"></i> Custom color match</li>
+                    <li><i class="fas fa-check"></i> Lasts up to 4 weeks</li>
+                </ul>
+                <a href="#booking" class="service-btn">Book Now</a>
+            </div>
+
+            <script>
+            // Service card click integration for booking
+            document.querySelectorAll('.service-card[data-booking-service]').forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Only trigger if not clicking the Book Now button directly
+                    if (e.target.closest('.service-btn')) return;
+                    const service = this.getAttribute('data-booking-service');
+                    const price = this.getAttribute('data-booking-price');
+                    const duration = this.getAttribute('data-booking-duration');
+                    // Scroll to booking section
+                    const bookingSection = document.getElementById('booking');
+                    if (bookingSection) bookingSection.scrollIntoView({behavior: 'smooth'});
+                    // Pre-select service in booking
+                    setTimeout(() => {
+                        const bookingOptions = document.querySelectorAll('.service-option');
+                        bookingOptions.forEach(opt => {
+                            if (opt.dataset.service === service) {
+                                opt.click();
+                            }
+                        });
+                    }, 500);
+                });
+            });
+            // Book Now button in card triggers same as card click
+            document.querySelectorAll('.service-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const card = this.closest('.service-card[data-booking-service]');
+                    if (card) card.click();
+                });
+            });
+            </script>
+            
+
+        </div>
+    </section>
+
+
+       
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-badge">
+                <i class="fas fa-quote-left"></i>
+                Testimonials
+            </span>
+            <h2 class="section-title">
+                What Our <span class="gradient-text">Clients Say</span>
+            </h2>
+            <p class="section-description">
+                Read reviews from our satisfied clients who love their new lashes.
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"I keep getting compliments on my lashes and i have ad it on for the longest time."</p>
+                <div class="client-info">
+                    <div class="client-avatar">😊</div>
+                    <div>
+                        <strong>Satisfied Client</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Best lash experience ever! The attention to detail is incredible. My lashes look natural yet so glamorous!"</p>
+                <div class="client-info">
+                    <div class="client-avatar">😊</div>
+                    <div>
+                        <strong>Satisfied Client</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"It lasted long and your work is amazing!"</p>
+                <div class="client-info">
+                    <div class="client-avatar">😊</div>
+                    <div>
+                        <strong>Satisfied Client</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The volume set is amazing! They last so long and still look fresh. Worth every penny!"</p>
+                <div class="client-info">
+                    <div class="client-avatar">😊</div>
+                    <div>
+                        <strong>Satisfied Client</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"You have been the best lash artist i have worked with so far!"</p>
+                <div class="client-info">
+                    <div class="client-avatar"></div>
+                    <div>
+                        <strong>Satisfied Client</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Game changer! I wake up feeling beautiful every day. No more mascara struggles!"</p>
+                <div class="client-info">
+                    <div class="client-avatar"></div>
+                    <div>
+                        <strong>Satisfied Client</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-header">
+            <span class="section-badge">
+                <i class="fas fa-users"></i>
+                Our Team
+            </span>
+            <h2 class="section-title">
+                Meet Our <span class="gradient-text">Expert Artists</span>
+            </h2>
+            <p class="section-description">
+                Our certified lash technicians are passionate about creating the perfect lashes for you.
+            </p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-card-inner">
+                    <div class="team-front">
+                        <div class="team-image">
+                            <img src="images/WhatsApp Image 2026-01-18 at 12.30.04.jpeg" alt="Anita Oluwo">
+                        </div>
+                        <h3>Anita Oluwo</h3>
+                        <p class="team-role">Lead Lash Artist</p>
+                        <!-- team-stats removed as requested -->
+                        <button class="flip-btn">Learn More</button>
+                    </div>
+                    <div class="team-back">
+                        <h3>Anita Oluwo</h3>
+                        <p class="bio">Master lash artist specializing in any lash set techniques. Certified trainer and award-winning stylist.</p>
+                        <div class="certifications">
+                            <span><i class="fas fa-certificate"></i> Master Certified</span>
+                            <span><i class="fas fa-trophy"></i> Award Winner</span>
+                            <span><i class="fas fa-graduation-cap"></i> Trainer</span>
+                        </div>
+                        <button class="flip-btn">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Hygiene -->
+    <section class="safety" id="safety">
+        <div class="section-header">
+            <span class="section-badge">
+                <i class="fas fa-check-circle"></i>
+                Safety First
+            </span>
+            <h2 class="section-title">
+                Your <span class="gradient-text">Health</span> & Safety
+            </h2>
+            <p class="section-description">
+                We maintain the highest standards of hygiene and safety protocols.
+            </p>
+        </div>
+
+        <div class="safety-grid">
+            <div class="safety-card">
+                <div class="safety-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Licensed Professionals</h3>
+                <p>All our lash artists are certified and licensed with ongoing training.</p>
+            </div>
+
+            <div class="safety-card">
+                <div class="safety-icon">
+                    <i class="fas fa-hand-sparkles"></i>
+                </div>
+                <h3>Strict Sterilization</h3>
+                <p>Hospital-grade sterilization for all tools between every client.</p>
+            </div>
+
+            <div class="safety-card">
+                <div class="safety-icon">
+                    <i class="fas fa-box-open"></i>
+                </div>
+                <h3>Premium Products</h3>
+                <p>Medical-grade adhesives and hypoallergenic synthetic lashes.</p>
+            </div>
+
+            <div class="safety-card">
+                <div class="safety-icon">
+                    <i class="fas fa-pump-medical"></i>
+                </div>
+                <h3>Clean Environment</h3>
+                <p>Daily deep cleaning and air purification systems.</p>
+            </div>
+
+            <div class="safety-card">
+                <div class="safety-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3>Health Screening</h3>
+                <p>Thorough consultations and patch tests for your safety.</p>
+            </div>
+
+            <div class="safety-card">
+                <div class="safety-icon">
+                    <i class="fas fa-virus-slash"></i>
+                </div>
+                <h3>COVID-19 Safety</h3>
+                <p>Enhanced protocols including masks and social distancing.</p>
+            </div>
+        </div>
+
+        
+
+
+
+   
+    <!-- Booking Section -->
+        <!-- Before Your Appointment Section -->
+        <section class="appointment-prep" id="appointment-prep">
+            <h3><i class="fas fa-calendar-check"></i> Before Your Appointment</h3>
+            <ul class="reminder-list">
+                <li>❌ Avoid caffeine before your appointment to minimize eye sensitivity.</li>
+                <li>❌ Arrive with clean, oil-free lashes (no makeup or mascara).</li>
+                <li>❌ Do not use oil-based products on your eyes 24 hours before.</li>
+                <li>❌ Avoid heavy creams or moisturizers around the eyes.</li>
+                <li>✅ Come ready to relax and enjoy your lash experience!</li>
+            </ul>
+        </section>
+    <section class="booking" id="booking">
+    <div class="booking-step" id="step1">
+        <h3 class="step-title">Step 1: Choose Your Service</h3>
+        <div class="service-options-grid">
+            <div class="service-option" data-service="classic" data-price="15000" data-duration="90">
+                <div class="service-option-icon"><i class="fas fa-eye"></i></div>
+                <h4>Classic Lash Extensions</h4>
+                <p class="service-option-price">₦15,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 1.5 hours</p>
+            </div>
+            <div class="service-option" data-service="hybrid" data-price="20000" data-duration="120">
+                <div class="service-option-icon"><i class="fas fa-eye-dropper"></i></div>
+                <h4>Hybrid Lash Extensions</h4>
+                <p class="service-option-price">₦20,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 2 hours</p>
+            </div>
+            <div class="service-option" data-service="brow-lamination" data-price="10000" data-duration="60">
+                <div class="service-option-icon"><i class="fas fa-grip-lines"></i></div>
+                <h4>Brow Lamination</h4>
+                <p class="service-option-price">₦10,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 1 hour</p>
+            </div>
+            <div class="service-option" data-service="brow-tint" data-price="10000" data-duration="30">
+                <div class="service-option-icon"><i class="fas fa-paint-brush"></i></div>
+                <h4>Brow Tint</h4>
+                <p class="service-option-price">₦10,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 30 mins</p>
+            </div>
+            <div class="service-option" data-service="volume" data-price="30000" data-duration="150">
+                <div class="service-option-icon"><i class="fas fa-feather-alt"></i></div>
+                <h4>Volume Lash Extensions</h4>
+                <p class="service-option-price">₦30,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 2.5 hours</p>
+            </div>
+            <div class="service-option" data-service="mega-volume" data-price="35000" data-duration="180">
+                <div class="service-option-icon"><i class="fas fa-crown"></i></div>
+                <h4>Mega Volume Set</h4>
+                <p class="service-option-price">₦35,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 3 hours</p>
+            </div>
+            <div class="service-option" data-service="angel" data-price="20000" data-duration="120">
+                <div class="service-option-icon"><i class="fas fa-star"></i></div>
+                <h4>Angel Set</h4>
+                <p class="service-option-price">₦20,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 2 hours</p>
+            </div>
+            <div class="service-option" data-service="doll" data-price="30000" data-duration="150">
+                <div class="service-option-icon"><i class="fas fa-heart"></i></div>
+                <h4>Doll Set</h4>
+                <p class="service-option-price">₦30,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 2.5 hours</p>
+            </div>
+            <div class="service-option" data-service="anime" data-price="30000" data-duration="150">
+                <div class="service-option-icon"><i class="fas fa-cat"></i></div>
+                <h4>Anime Set</h4>
+                <p class="service-option-price">₦30,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 2.5 hours</p>
+            </div>
+            <div class="service-option" data-service="bottom-lashes" data-price="12000" data-duration="45">
+                <div class="service-option-icon"><i class="fas fa-arrow-down"></i></div>
+                <h4>Bottom Lashes</h4>
+                <p class="service-option-price">₦8,000 - ₦15,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 45 mins</p>
+            </div>
+            <div class="service-option" data-service="wispy-addon" data-price="6000" data-duration="20">
+                <div class="service-option-icon"><i class="fas fa-feather"></i></div>
+                <h4>Wispy Add-on</h4>
+                <p class="service-option-price">₦6,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 20 mins</p>
+            </div>
+            <div class="service-option" data-service="lash-removal" data-price="5000" data-duration="30">
+                <div class="service-option-icon"><i class="fas fa-eraser"></i></div>
+                <h4>Lash Removal</h4>
+                <p class="service-option-price">₦5,000</p>
+                <p class="service-option-time"><i class="fas fa-clock"></i> 30 mins</p>
+            </div>
+        </div>
+    </div>
+    <div class="booking-step" id="step2">
+        <h3 class="step-title">Step 2: Select Date & Time</h3>
+        <div class="calendar-time-wrapper">
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <button class="calendar-nav" id="prevMonth" type="button"><i class="fas fa-chevron-left"></i></button>
+                            <h4 id="calendarMonth">January 2026</h4>
+                            <button class="calendar-nav" id="nextMonth" type="button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="day-label">Sun</div>
+                            <div class="day-label">Mon</div>
+                            <div class="day-label">Tue</div>
+                            <div class="day-label">Wed</div>
+                            <div class="day-label">Thu</div>
+                            <div class="day-label">Fri</div>
+                            <div class="day-label">Sat</div>
+                        </div>
+                        <div class="calendar-grid" id="calendarGrid"></div>
+                    </div>
+                    <div class="time-slots-container">
+                        <h4>Available Time Slots</h4>
+                        <p class="selected-date-display" id="selectedDateDisplay">Select a date</p>
+                        <div class="time-slots" id="timeSlots">
+                            <p class="no-date-message">Please select a date first</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Contact Details -->
+            <div class="booking-step" id="step3">
+                <h3 class="step-title">Step 3: Your Details</h3>
+                <form class="booking-form" id="bookingForm" action="https://formsubmit.co/lovemylashesng@gmail.com" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+234 801 234 5678" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="artist">Preferred Artist (Optional)</label>
+                        <select id="artist" name="artist">
+                            <option value="">No preference</option>
+                            <option value="anita">Anita Oluwo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Any allergies, special requests, or questions..."></textarea>
+                    </div>
+
+                    <!-- Hidden fields for FormSubmit -->
+                    <input type="hidden" name="_subject" value=" New Lash Booking!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="service" id="hiddenService">
+                    <input type="hidden" name="booking_date" id="hiddenDate">
+                    <input type="hidden" name="booking_time" id="hiddenTime">
+                    <input type="hidden" name="price" id="hiddenPrice">
+                    <input type="hidden" name="_redirect" value="thankyou.html">
+
+                    <!-- Booking Summary -->
+                    <div class="booking-summary">
+                        <h4>Booking Summary</h4>
+                        <div class="summary-item">
+                            <span>Service:</span>
+                            <strong id="summaryService">-</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Date:</span>
+                            <strong id="summaryDate">-</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Time:</span>
+                            <strong id="summaryTime">-</strong>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <strong id="summaryPrice">$0</strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Confirm Booking</span>
+                        <i class="fas fa-check"></i>
+                    </button>
+                </form>
+                </div>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="booking-navigation">
+                <button class="nav-btn prev-btn" id="prevStep" type="button" style="display: none;">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Previous</span>
+                </button>
+                <button class="nav-btn next-btn" id="nextStep" type="button">
+                    <span>Next</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-badge">
+                <i class="fas fa-envelope"></i>
+                Get in Touch
+            </span>
+            <h2 class="section-title">
+                Contact <span class="gradient-text">Us</span>
+            </h2>
+            <p class="section-description">
+                Have questions? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>33, Modupe Oluwa Street<br>Cele Nica, Ojo, Lagos</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>234 814 914 4458<br>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>lovemylashesng@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Business Hours</h3>
+                <p>Mon-Sat: 9:00 AM - 7:00 PM<br>Sunday: By Appointment</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com/lovemylashes_ng" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://snapchat.com/lovemylashes" target="_blank" rel="noopener">
+                    <i class="fab fa-snapchat"></i>
+                </a>
+                <a href="https://tiktok.com/@lovemylashes_ng" target="_blank" rel="noopener">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-gem"></i>
+                    <span>Love My Lashes</span>
+                </div>
+                <p>Transform your look with premium lash extensions from certified professionals.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/lovemylashes"><i class="fab fa-instagram"></i></a>
+                    <a href="https://snapchat.com/lovemylashes"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://twitter.com/lovemylashes"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com/@lovemylashes_ng"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Classic - ₦18,000</a></li>
+                    <li><a href="#services">Hybrid - ₦20,000</a></li>
+                    <li><a href="#services">Volume - ₦25,000</a></li>
+                    <li><a href="#services">Mega Volume - ₦30,000</a></li>
+                    <li><a href="#services">Angel Set - ₦20,000</a></li>
+                    <li><a href="#services">Doll Set - ₦30,000</a></li>
+                    <li><a href="#services">Anime Set - ₦30,000</a></li>
+                    <li><a href="#services">Wispy - ₦6,000</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +234 8149144458</li>
+                    <li><i class="fas fa-envelope"></i> lovemylashesng@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 33, Modupe Oluwa St, Cele Nica, Ojo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Love My Lashes. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="standalone.js"></script>
+    <script src="booking-calendar.js"></script>
+</body>
+</html>

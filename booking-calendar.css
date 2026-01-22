@@ -1,0 +1,460 @@
+/* Enhanced Booking System CSS */
+
+.booking-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.booking-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 0;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.progress-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(26, 26, 26, 0.8);
+    border: 2px solid rgba(255, 20, 147, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.progress-step.active .progress-circle {
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    border-color: transparent;
+    box-shadow: 0 4px 20px rgba(255, 20, 147, 0.5);
+}
+
+.progress-step.completed .progress-circle {
+    background: #FF1493;
+    border-color: transparent;
+}
+
+.progress-step span {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+}
+
+.progress-step.active span {
+    color: #FF1493;
+}
+
+.progress-line {
+    width: 150px;
+    height: 2px;
+    background: rgba(255, 20, 147, 0.3);
+    position: relative;
+    top: -25px;
+    z-index: 1;
+}
+
+.booking-step {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.booking-step.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+/* Service Selection */
+.service-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 1.2rem; /* Reduced space below services */
+}
+
+.service-option {
+    background: rgba(26, 26, 26, 0.8);
+    border: 2px solid rgba(255, 20, 147, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.service-option:hover {
+    border-color: rgba(255, 20, 147, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3);
+}
+
+.service-option.selected {
+    border-color: #FF1493;
+    background: rgba(255, 20, 147, 0.1);
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+}
+
+.service-option-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-option-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.service-option h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-option-price {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0.5rem 0;
+}
+
+.service-option-time {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.popular-tag-small {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Calendar & Time Slots */
+.calendar-time-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.calendar-container,
+.time-slots-container {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(255, 20, 147, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-header h4 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.calendar-nav {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 20, 147, 0.1);
+    border: 1px solid rgba(255, 20, 147, 0.3);
+    border-radius: 10px;
+    color: #FF1493;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calendar-nav:hover {
+    background: rgba(255, 20, 147, 0.2);
+    transform: scale(1.05);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.day-label {
+    text-align: center;
+    font-weight: 600;
+    color: #FF1493;
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(10, 10, 10, 0.5);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.calendar-day:hover:not(.disabled):not(.other-month) {
+    background: rgba(255, 20, 147, 0.2);
+    color: white;
+}
+
+.calendar-day.selected {
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    color: white;
+    font-weight: 700;
+}
+
+.calendar-day.today {
+    border: 2px solid #FF1493;
+}
+
+.calendar-day.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.calendar-day.other-month {
+    opacity: 0.2;
+}
+
+.time-slots-container h4 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.selected-date-display {
+    color: #FF1493;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 20, 147, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.time-slot {
+    padding: 1rem;
+    background: rgba(10, 10, 10, 0.5);
+    border: 1px solid rgba(255, 20, 147, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.time-slot:hover {
+    background: rgba(255, 20, 147, 0.2);
+    border-color: #FF1493;
+}
+
+.time-slot.selected {
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+}
+
+.time-slot.unavailable {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.no-date-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+}
+
+/* Booking Summary */
+.booking-summary {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(255, 20, 147, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.booking-summary h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.summary-item strong {
+    color: white;
+}
+
+.summary-item.total {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(255, 20, 147, 0.3);
+}
+
+.summary-item.total strong {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Navigation Buttons */
+.booking-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7rem; /* Bring navigation buttons closer to services */
+    gap: 1rem;
+}
+
+.nav-btn {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.5);
+}
+
+.prev-btn {
+    background: transparent;
+    border: 2px solid rgba(255, 20, 147, 0.5);
+}
+
+.prev-btn:hover {
+    background: rgba(255, 20, 147, 0.1);
+}
+
+.next-btn {
+    margin-left: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .service-selection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calendar-time-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-selection {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-line {
+        width: 80px;
+    }
+
+    .progress-step span {
+        font-size: 0.75rem;
+    }
+
+    .time-slots {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-navigation {
+        flex-direction: column;
+    }
+
+    .next-btn {
+        margin-left: 0;
+    }
+}
